@@ -1,0 +1,72 @@
+# Query: QUILL
+# ContextLines: 1
+
+16 results - 8 files
+
+COPY-PASTE-LIST.md:
+   1  
+   2: # AI-Reads - A Modern Fullstack SaaS-Platform
+   3  
+
+   9  
+  10: ![Project Image](https://github.com/joschan21/quill/blob/master/public/thumbnail.png)
+  11  
+
+package.json:
+  1  {
+  2:   "name": "quill",
+  3    "version": "0.1.0",
+
+README.md:
+   1: # Quill - A Modern Fullstack SaaS-Platform
+   2  
+
+   4  
+   5: ![Project Image](https://github.com/joschan21/quill/blob/master/public/thumbnail.png)
+   6  
+
+  31  ```bash
+  32:   git clone https://github.com/joschan21/quill.git
+  33  ```
+
+src\app\page.tsx:
+   12            <p className='text-sm font-semibold text-gray-700'>
+   13:             Quill is now public!
+   14            </p>
+
+   21          <p className='mt-5 max-w-prose text-zinc-700 sm:text-lg'>
+   22:           Quill allows you to have conversations with any
+   23            PDF document. Simply upload your file and start
+
+   93                Chatting to your PDF files has never been
+   94:               easier than with Quill.
+   95              </p>
+
+  143                <span className='mt-2 text-zinc-700'>
+  144:                 It&apos;s that simple. Try out Quill today -
+  145                  it really takes less than a minute.
+
+src\app\api\message\route.ts:
+  52    const pinecone = await getPineconeClient()
+  53:   const pineconeIndex = pinecone.Index('quill')
+  54  
+
+src\app\api\uploadthing\core.ts:
+  96      const pinecone = await getPineconeClient()
+  97:     const pineconeIndex = pinecone.Index('quill')
+  98  
+
+src\components\Navbar.tsx:
+  23              className='flex z-40 font-semibold'>
+  24:             <span>quill.</span>
+  25            </Link>
+
+src\lib\utils.ts:
+  18  export function constructMetadata({
+  19:   title = "Quill - the SaaS for students",
+  20:   description = "Quill is an open-source software to make chatting to your PDF files easy.",
+  21    image = "/thumbnail.png",
+
+  50      icons,
+  51:     metadataBase: new URL('https://quill-jet.vercel.app'),
+  52      themeColor: '#FFF',
